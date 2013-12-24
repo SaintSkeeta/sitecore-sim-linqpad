@@ -1,0 +1,10 @@
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\bin\SIM.Tool.Plugins.LinqpadTools.dll
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\bin\SIM.Tool.Plugins.LinqpadTools.pdb
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\obj\Debug\Dialogs\ConfigGeneratorDialog.baml
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\obj\Debug\Dialogs\ConfigGeneratorDialog.g.cs
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\obj\Debug\SIM.Tool.Plugins.LinqpadTools_MarkupCompile.cache
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\obj\Debug\SIM.Tool.Plugins.LinqpadTools.g.resources
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\obj\Debug\SIM.Tool.Plugins.LinqpadTools.Properties.Resources.resources
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\obj\Debug\SIM.Tool.Plugins.LinqpadTools.csproj.GenerateResource.Cache
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\obj\Debug\SIM.Tool.Plugins.LinqpadTools.dll
+C:\Users\adc\Documents\Visual Studio 2013\Projects\SIM.Tool.Plugins.LinqpadTools\obj\Debug\SIM.Tool.Plugins.LinqpadTools.pdb

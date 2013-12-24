@@ -72,8 +72,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigGeneratorButton.cs" />
+    <Compile Include="Pipelines\AddRoleManagerRepairer.cs" />
     <Compile Include="Pipelines\AddLog4netRepairer.cs" />
     <Compile Include="Pipelines\AddAspNetRepairer.cs" />
+    <Compile Include="Repairers\MakeNodeCommentRepairer.cs" />
+    <Compile Include="Repairers\RoleManagerRepairer.cs" />
     <Compile Include="Repairers\Log4netRepairer.cs" />
     <Compile Include="Repairers\ConfigRepairerManager.cs" />
     <Compile Include="Repairers\ConfigStorePathRepairer.cs" />

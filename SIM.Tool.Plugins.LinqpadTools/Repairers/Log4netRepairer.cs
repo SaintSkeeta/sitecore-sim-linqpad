@@ -12,25 +12,32 @@ using SIM.Instances;
 
 namespace SIM.Tool.Plugins.LinqpadTools.Repairers
 {
-    public class Log4netRepairer : IConfigRepairer
+    public class Log4netRepairer : MakeNodeCommentRepairer
     {
-        public virtual void Repair(XmlDocument doc, Instance instance)
+        protected override IEnumerable<string> GetPaths(XmlDocument doc, Instance instance)
         {
-            Assert.ArgumentNotNull(doc, "doc");
-            var log4netNode = doc.SelectSingleNode("/configuration/log4net");
-            if (log4netNode == null)
-            {
-                return;
-            }
-            var nodes = log4netNode.SelectNodes("//encoding");
-            if (nodes == null || nodes.Count == 0)
-            {
-                return;
-            }
-            foreach (XmlNode node in nodes)
-            {
-                node.ParentNode.RemoveChild(node);
-            }
+            return new string[] {"/configuration/log4net//encoding"};
         }
     }
+    //public class Log4netRepairer : IConfigRepairer
+    //{
+    //    public virtual void Repair(XmlDocument doc, Instance instance)
+    //    {
+    //        Assert.ArgumentNotNull(doc, "doc");
+    //        var log4netNode = doc.SelectSingleNode("/configuration/log4net");
+    //        if (log4netNode == null)
+    //        {
+    //            return;
+    //        }
+    //        var nodes = log4netNode.SelectNodes("//encoding");
+    //        if (nodes == null || nodes.Count == 0)
+    //        {
+    //            return;
+    //        }
+    //        foreach (XmlNode node in nodes)
+    //        {
+    //            node.ParentNode.RemoveChild(node);
+    //        }
+    //    }
+    //}
 }
