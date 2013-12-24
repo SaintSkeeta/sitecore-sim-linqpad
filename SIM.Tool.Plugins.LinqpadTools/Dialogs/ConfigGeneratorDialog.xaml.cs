@@ -40,7 +40,7 @@ namespace SIM.Tool.Plugins.LinqpadTools.Dialogs
         protected virtual void SaveAs_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new Microsoft.Win32.SaveFileDialog();
-            dialog.InitialDirectory = @"C:\Program Files (x86)\LINQPad4\";
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) + @"\LINQPad4\";
             dialog.FileName = "LINQPad.config"; 
             dialog.DefaultExt = ".config"; 
             dialog.Filter = "Config files |*.config";
