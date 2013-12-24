@@ -98,6 +98,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Resource Include="_install files\Linqpad Tools\Plugin.xml" />
+    <Content Include="_install files\Linqpad Tools\SIM.Tool.Plugins.LinqpadTools.dll" />
+    <Content Include="_install files\Linqpad Tools\SIM.Tool.Plugins.LinqpadTools.pdb" />
     <Resource Include="images\window.ico" />
     <Resource Include="images\32\linqpadlogo.png" />
     <EmbeddedResource Include="Properties\Resources.resx">
