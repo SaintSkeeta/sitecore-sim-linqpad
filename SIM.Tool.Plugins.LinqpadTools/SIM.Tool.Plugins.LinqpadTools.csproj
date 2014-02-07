@@ -33,26 +33,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SIM.Base">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sitecore Instance Manager\SIM.Base.dll</HintPath>
+      <HintPath>References\SIM.Base.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <Private>False</Private>
     </Reference>
     <Reference Include="SIM.Kernel.Adapters">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sitecore Instance Manager\SIM.Kernel.Adapters.dll</HintPath>
+      <HintPath>References\SIM.Kernel.Adapters.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <Private>False</Private>
     </Reference>
     <Reference Include="SIM.Kernel.Instances">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sitecore Instance Manager\SIM.Kernel.Instances.dll</HintPath>
+      <HintPath>References\SIM.Kernel.Instances.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <Private>False</Private>
     </Reference>
     <Reference Include="SIM.Kernel.Pipelines">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sitecore Instance Manager\SIM.Kernel.Pipelines.dll</HintPath>
+      <HintPath>References\SIM.Kernel.Pipelines.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SIM.Tool.Base">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sitecore Instance Manager\SIM.Tool.Base.dll</HintPath>
+      <HintPath>References\SIM.Tool.Base.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <Private>False</Private>
     </Reference>
