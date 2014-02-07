@@ -56,6 +56,10 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <Private>False</Private>
     </Reference>
+    <Reference Include="SIM.Tool.Dialogs">
+      <HintPath>References\SIM.Tool.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -82,9 +86,6 @@
     <Compile Include="Repairers\ConfigStorePathRepairer.cs" />
     <Compile Include="Repairers\AspNetRepairer.cs" />
     <Compile Include="Repairers\NonAsciiRepairer.cs" />
-    <Compile Include="Dialogs\ConfigGeneratorDialog.xaml.cs">
-      <DependentUpon>ConfigGeneratorDialog.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Repairers\IConfigRepairer.cs" />
     <Compile Include="Pipelines\AddConfigStorePathRepairer.cs" />
     <Compile Include="Pipelines\AddNonAsciiRepairer.cs" />
@@ -116,12 +117,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Dialogs\ConfigGeneratorDialog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

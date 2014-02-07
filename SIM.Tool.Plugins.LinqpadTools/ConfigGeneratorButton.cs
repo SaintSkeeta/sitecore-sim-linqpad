@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using SIM.Base;
 using SIM.Instances;
 using SIM.Tool.Base;
 using SIM.Tool.Base.Plugins;
-using SIM.Tool.Plugins.LinqpadTools.Dialogs;
+using SIM.Tool.Dialogs;
+using SIM.Tool.Plugins.LinqpadTools.Repairers;
+using System;
+using System.Windows;
+using System.Xml;
 
 namespace SIM.Tool.Plugins.LinqpadTools
 {
@@ -20,7 +19,31 @@ namespace SIM.Tool.Plugins.LinqpadTools
 
         public void OnClick(Window mainWindow, Instance instance)
         {
-            WindowHelper.ShowDialog(new ConfigGeneratorDialog(instance), mainWindow);
+            string folderDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) + @"\LINQPad4\";
+            string filename = "LINQPad.config";
+            string title = "LINQPad.config File Generator";
+            string description = "This config file allows you to use the Sitecore API within LINQPad.";
+
+            WindowHelper.ShowDialog(new ConfigGeneratorDialog(instance, folderDirectory, filename, title, description, CreateLinqConfig), mainWindow);
+        }
+
+        public XmlDocument CreateLinqConfig(Instance instance)
+        {
+            var doc = instance.GetWebResultConfig();
+            this.RunRepairers(doc, instance);
+
+            return doc;
+        }
+
+        private void RunRepairers(XmlDocument doc, Instance instance)
+        {
+            Assert.ArgumentNotNull(doc, "doc");
+            Assert.ArgumentNotNull(instance, "instance");
+
+            foreach (var repairer in ConfigRepairerManager.ConfigRepairers)
+            {
+                repairer.Repair(doc, instance);
+            }
         }
     }
 }
